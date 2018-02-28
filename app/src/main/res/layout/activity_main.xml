@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isabel.calculadora.MainActivity"
+    android:orientation="vertical"
+
+    >
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.2"
+       android:id="@+id/vista"
+       android:textSize="40sp"
+       android:textColor="@color/black"
+       android:gravity="center"
+
+
+
+       />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="right"
+       android:text="@string/borrar"
+       android:id="@+id/borrar"
+       android:onClick="borrar"
+       android:background="@drawable/boton_redondo"
+       android:textColor="@color/white"
+       android:textSize="25sp"
+
+       />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:layout_weight="0.8"
+       android:orientation="vertical"
+       >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          >
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton7"
+             android:id="@+id/b7"
+             android:onClick="siete"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+
+
+             />
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton8"
+             android:id="@+id/b8"
+             android:onClick="ocho"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton9"
+             android:id="@+id/b9"
+             android:onClick="nueve"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/mas"
+             android:id="@+id/bmas"
+             android:onClick="mas"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             />
+
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          >
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton4"
+             android:id="@+id/b4"
+             android:onClick="cuatro"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+
+
+
+             />
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton5"
+             android:id="@+id/b5"
+             android:onClick="cinco"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton6"
+             android:id="@+id/b6"
+             android:onClick="seis"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/menos"
+             android:id="@+id/bmenos"
+             android:onClick="menos"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          >
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton1"
+             android:id="@+id/b1"
+             android:onClick="uno"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+
+
+             />
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton2"
+             android:id="@+id/b2"
+             android:onClick="dos"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton3"
+             android:id="@+id/b3"
+             android:onClick="tres"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/multiplicacion"
+             android:id="@+id/bmulti"
+             android:onClick="multiplicacion"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          >
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/punto"
+             android:id="@+id/bpunto"
+             android:onClick="punto"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+
+
+             />
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/boton0"
+             android:id="@+id/b0"
+             android:onClick="cero"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/igual"
+             android:id="@+id/bigual"
+             android:onClick="igual"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             />
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/division"
+             android:id="@+id/bdiv"
+             android:onClick="division"
+             android:background="@drawable/boton_redondo"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+             />
+
+   </LinearLayout>
+
+   </LinearLayout>
+
+</LinearLayout>
