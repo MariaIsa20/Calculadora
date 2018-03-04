@@ -10,8 +10,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView Tvista;
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bmas,bmenos,bigual,bmulti,bdiv,bpunto;
-    float valor,valor1,valor2,resultado;
-    String Svalue = " ",t;
+    float valor = 0,valor1 = 0,valor2 = 0,resultado;
+    String Svalue = "",t;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,21 +43,18 @@ public class MainActivity extends AppCompatActivity {
         Svalue += "7";  //
         Tvista.setText(Svalue);
         valor = Float.parseFloat(Svalue);
-
     }
 
     public void ocho(View view) {
         Svalue += "8";
         Tvista.setText(Svalue);
         valor = Float.parseFloat(Svalue);
-
     }
 
     public void nueve(View view) {
         Svalue += "9";
         Tvista.setText(Svalue);
         valor = Float.parseFloat(Svalue);
-
     }
 
     public void cuatro(View view) {
@@ -77,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         Tvista.setText(Svalue);
         valor = Float.parseFloat(Svalue);
     }
-
 
     public void uno(View view) {
         Svalue += "1";
@@ -113,59 +109,23 @@ public class MainActivity extends AppCompatActivity {
         valor1 = valor;
         t = "suma";
 
-
     }
     public void menos(View view) {
-
         Svalue = "";
-        //Tvista.setText(Svalue);
         valor1 = valor;
         t = "resta";
     }
 
     public void multiplicacion(View view) {
         Svalue = "";
-        //Tvista.setText(Svalue);
         valor1 = valor;
         t = "multi";
     }
 
-
     public void division(View view) {
         Svalue = "";
-        //Tvista.setText(Svalue);
         valor1 = valor;
         t = "division";
-    }
-
-    public void igual(View view) {
-
-        valor2 = valor;
-
-        switch (t){
-            case "suma":
-                resultado = valor1 + valor2;
-
-                Tvista.setText(Float.toString(resultado));
-                break;
-            case "resta":
-                resultado = valor1-valor2;
-                Tvista.setText(Float.toString(resultado));
-                break;
-            case "multi":
-                resultado = valor1*valor2;
-                Tvista.setText(Float.toString(resultado));
-                break;
-            case "division" :
-                    resultado = valor1/valor2;
-                    Tvista.setText(Float.toString(resultado));
-                    break;
-
-
-
-        }
-
-
     }
 
     public void borrar(View view) {
@@ -177,4 +137,41 @@ public class MainActivity extends AppCompatActivity {
         Svalue = "";
 
     }
+
+    public void igual(View view) {
+
+        int id = view.getId();
+
+        if(id == R.id.bigual){
+            if(Svalue.isEmpty() ){
+                Tvista.setText("No hay valores");
+            }
+
+            else{
+                valor2 = valor;
+
+                switch (t){
+                    case "suma":
+                        resultado = valor1 + valor2;
+                        Tvista.setText(Float.toString(resultado));
+                        break;
+                    case "resta":
+                        resultado = valor1-valor2;
+                        Tvista.setText(Float.toString(resultado));
+                        break;
+                    case "multi":
+                        resultado = valor1*valor2;
+                        Tvista.setText(Float.toString(resultado));
+                        break;
+                    case "division" :
+                        resultado = valor1/valor2;
+                        Tvista.setText(Float.toString(resultado));
+                        break;
+                }
+            }
+
+        }
+
+    }
+
 }
